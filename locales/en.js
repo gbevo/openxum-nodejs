@@ -247,5 +247,11 @@
 	"Making a move": "Making a move",
 	"Placing a marble and removing a board piece": "Placing a marble and removing a board piece",
 	"Capturing marbles": "Capturing marbles",
-	"You must try to capture either": "You must try to capture either"
+	"You must try to capture either": "You must try to capture either",
+	"Forum": "Forum",
+	"liste des games": "liste des games",
+	"Discussion/Auteur": "Discussion/Auteur",
+	"Reponses": "Reponses",
+	"ajouter un sujet": "ajouter un sujet",
+	"Ajouter une question": "Ajouter une question"
 }

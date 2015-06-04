@@ -1,0 +1,38 @@
+extends ../../layouts/default
+
+block head
+  title Forum
+
+block neck
+  link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+
+block body
+  div.row
+    div.col-sm-12
+      div.page-header
+        h1 #{__('Forum')}
+  div.col-sm-11
+     h1 #{__('liste des games')}
+
+
+
+     h3 #{__('Ajouter une question')}
+     br
+     input(type="text", name="name", placeholder="titre")
+     br
+     br
+
+     textarea(name="sujet" placeholder=" contenu de la question")
+     br
+     br
+     input(type="submit", value="postez")
+
+    div.col-sm-10
+     h3 #{__('Discussion/Auteur')}
+
+    div.col-sm-2
+    h3 #{__('Reponses')}
+
+
+
+
