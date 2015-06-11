@@ -59,6 +59,9 @@ exports = module.exports = function (app, passport) {
     app.get('/players/', require('./views/players/index').init);
     app.get('/ranking/', require('./views/ranking/index').init);
     app.get('/forum/', require('./views/forum/index').init);//forum
+    app.post('/forum/validate', require('./views/forum/validate').init);//forum
+    app.get('/commentaire/', require('./views/commentaire/index').init);//commentaire
+    app.post('/commentaire/valide', require('./views/commentaire/valide').init);//commentaire
     app.get('/faq/', require('./views/faq/index').init);
 	 app.get('/mygames/', require('./views/mygames/index').init);
 

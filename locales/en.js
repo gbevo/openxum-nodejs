@@ -253,5 +253,15 @@
 	"Discussion/Auteur": "Discussion/Auteur",
 	"Reponses": "Reponses",
 	"ajouter un sujet": "ajouter un sujet",
-	"Ajouter une question": "Ajouter une question"
+	"Ajouter une question": "Ajouter une question",
+	"liste des questions": "liste des questions",
+	"nvkfugckug": "nvkfugckug",
+	"tititkjtitjtjtjtj": "tititkjtitjtjtjtj",
+	"ursule": "ursule",
+	"ajouter un reponse": "ajouter un reponse",
+	"": "",
+	"Ajouter un reponse": "Ajouter un reponse",
+	"question.titre": "question.titre",
+	"Ajouter un Commentaire": "Ajouter un Commentaire",
+	"Liste des Commentaires": "Liste des Commentaires"
 }
