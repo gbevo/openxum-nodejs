@@ -1,37 +1,43 @@
 extends ../../layouts/default
 
 block head
-  title Forum
+   title Forum
 
 block neck
   link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+  link(rel='stylesheet', href='/layouts/style.css?#{cacheBreaker}')
+
+
 
 block body
   div.row
     div.col-sm-12
       div.page-header
-        h1 #{__('Forum')}
+         h1  #{__ ('Forum')}
   div.row
     div.col-sm-12
      if user && user.username
+
        form(name="Question",method="post" action="/forum/validate")
           h3 #{__('Ajouter une question')}
           br
-          input(type="text", name="titre", placeholder="titre")
+
+          input#text(type="text", size="20",name="titre" required value="" pattern="^[a-zA-Z0-9\?\!\,\+\*\-\.\#\]+$")
 
           br
           br
 
-          textarea(name="contenu" placeholder=" contenu de la question")
+          textarea#text(style="width: 50%; height: 100px;", size="20",name="contenu" ,required value="" pattern="^[a-zA-Z0-9\?\!\,\+\*\-\.\#\]+$")
           br
           br
-          input(type="submit", value="Valider")
+          input#valider(type="submit", value="Valider")
 
    
 
 
 
     div.col-sm-12
+
      h3 #{__('liste des questions')}
 
 
@@ -39,11 +45,9 @@ block body
         each question in questions
           tr
             td
-              a(href='/commentaire/?test= #{question.titre}') #{question.titre}
+              a(href='/commentaire/?test=#{question.contenu}') #{question.contenu}
 
 
-    div.col-sm-2
-    h3 #{__('Reponses')}
 
 
 

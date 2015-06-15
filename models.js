@@ -20,4 +20,5 @@ exports = module.exports = function (app, mongoose) {
 
     require('./schema/Question')(app, mongoose);
     require('./schema/Commentaire')(app, mongoose);
+
 };
