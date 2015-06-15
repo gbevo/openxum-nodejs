@@ -1,0 +1,50 @@
+extends ../../layouts/default
+
+
+block head
+  title Forum
+
+block neck
+  link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+  link(rel='stylesheet', href='/layouts/style.css?#{cacheBreaker}')
+
+block body
+
+
+  div.row
+    div.col-sm-12
+      div.page-header
+         h1 #{__('Forum')}
+  div.row
+    div.col-sm-12
+     if user && user.username
+       form(name="Commentaire",method="post" action="/commentaire/valide")
+
+
+          h3 #{__('Ajouter un Commentaire')}
+          br
+          br
+
+
+
+          input#text(type="text" ,disabled="disabled",size="60", name="titre",value = '#{libelle}')
+
+          br
+          br
+
+          textarea#text(style="width: 50%; height: 100px;",size="20",name="libelle",required value="" pattern="^[a-zA-Z0-9\?\!\,\+\*\-\.\#\]+$")
+          br
+          br
+          input#valider(type="submit", value="Ajouter")
+
+
+
+   div.col-sm-12
+        h3 #{__('Liste des Commentaires')}
+
+
+         table.table
+           each commentaire in commentaires
+             tr
+               td
+                 p #{commentaire.libelle}
