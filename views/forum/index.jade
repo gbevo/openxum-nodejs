@@ -32,7 +32,9 @@ block body
           br
           input#valider(type="submit", value="Valider")
 
-   
+
+
+
 
 
 
@@ -45,9 +47,9 @@ block body
         each question in questions
           tr
             td
-              a(href='/commentaire/?test=#{question.contenu}') #{question.contenu}
+              a(href='/commentaire/?test=#{question._id}') #{question.contenu}
 
-
+                   td  #{question.timeCreated}
 
 
 

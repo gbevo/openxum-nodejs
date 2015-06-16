@@ -28,7 +28,7 @@ block body
 
 
           input#text(type="text" ,disabled="disabled",size="60", name="titre",value = '#{libelle}')
-
+          input(type="hidden" name="question_id" value = '#{question_id}')
           br
           br
 
@@ -36,6 +36,8 @@ block body
           br
           br
           input#valider(type="submit", value="Ajouter")
+          br
+          br
 
 
 
@@ -47,4 +49,7 @@ block body
            each commentaire in commentaires
              tr
                td
+
                  p #{commentaire.libelle}
+
+                     td #{commentaire.time}

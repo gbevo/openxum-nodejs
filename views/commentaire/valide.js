@@ -6,12 +6,12 @@ exports.init = function(req, res){
 
     var fieldsToSet = {
         libelle: req.param('libelle'),
-
-
+        question: req.param('question_id'),
         userCreated: {
             id: req.user._id,
             name: req.user.username
         }
+
     };
 
     console.log(fieldsToSet);
