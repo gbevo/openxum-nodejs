@@ -14,14 +14,14 @@ block body
   div.row
     div.col-sm-12
       div.page-header
-         h1 #{__('Forum')}
+         h1 #{__('Forum sur Openxum')}
   div.row
     div.col-sm-12
      if user && user.username
        form(name="Commentaire",method="post" action="/commentaire/valide")
 
 
-          h3 #{__('Ajouter un Commentaire')}
+          h2 #{__('Ajouter un Commentaire')}
           br
           br
 
@@ -38,18 +38,24 @@ block body
           input#valider(type="submit", value="Ajouter")
           br
           br
+          br
 
 
 
    div.col-sm-12
-        h3 #{__('Liste des Commentaires')}
+        h2 #{__('Liste des Commentaires')}
 
 
          table.table
+           tr
+                td(style="background-color: #F9F9F9; ") Commentaire
+                td(style="background-color: #F9F9F9; ") Auteur
+                td(style="background-color: #F9F9F9; ") Date
            each commentaire in commentaires
              tr
                td
 
                  p #{commentaire.libelle}
 
-                     td #{commentaire.time}     
+                     td #{commentaire.auteur}
+                     td #{commentaire.time}

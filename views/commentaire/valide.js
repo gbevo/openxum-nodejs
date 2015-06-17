@@ -2,11 +2,13 @@
 
 exports.init = function(req, res){
     console.log(req.param('libelle'));
+    console.log(req.param('auteur'));
 
 
     var fieldsToSet = {
         libelle: req.param('libelle'),
         question: req.param('question_id'),
+        auteur: req.user.username,
         userCreated: {
             id: req.user._id,
             name: req.user.username

@@ -1,8 +1,12 @@
 h1{
     font-size: 300%;
-    color: navy;
+    color: #0000ff;
     text-align: center;
-
+    display:block;
+    animation:linear marqueelike 20s infinite ;
+    margin-center:100%;
+    padding:0 5px;
+    height:25px;
 }
 
 tr{
@@ -27,9 +31,19 @@ table{
 h3{
     font-size : 25px;
     font-family : Verdana, arial, helvetica, sans-serif;
-    color : #000000;
+    color : #0000ff;
     font-weight : bold;
     text-align: center;
+
+
+}
+
+h2{
+    font-size : 25px;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    color : #0000ff;
+    font-weight : bold;
+    text-align: left;
 
 
 }
@@ -94,7 +108,18 @@ td:hover{
     color: #ffffff;
 
 }
+#texte{
+    style="background:red"
+}
 
 
+#comm{
+    background-color: #F9F9F9;
+}
+#aut{
+    background-color: #F9F9F9;
+}
+#date{
+    background-color: #F9F9F9;
 
-
+}

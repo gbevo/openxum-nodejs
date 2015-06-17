@@ -13,13 +13,13 @@ block body
   div.row
     div.col-sm-12
       div.page-header
-         h1  #{__ ('Forum')}
+         h1  #{__ ('Forum sur Openxum')}
   div.row
     div.col-sm-12
      if user && user.username
 
        form(name="Question",method="post" action="/forum/validate")
-          h3 #{__('Ajouter une question')}
+          h2 #{__('Ajouter une question')}
           br
 
           input#text(type="text", size="20",name="titre" required value="" pattern="^[a-zA-Z0-9\?\!\,\+\*\-\.\#\]+$")
@@ -40,16 +40,23 @@ block body
 
     div.col-sm-12
 
-     h3 #{__('liste des questions')}
+     h2 #{__('liste des questions')}
 
 
       table.table
+        tr
+            td Question
+            td Auteur
+            td Date
         each question in questions
           tr
             td
               a(href='/commentaire/?test=#{question._id}') #{question.contenu}
 
+                   td  #{question.inscrit}
                    td  #{question.timeCreated}
+
+
 
 
 

@@ -263,5 +263,7 @@
 	"Ajouter un reponse": "Ajouter un reponse",
 	"question.titre": "question.titre",
 	"Ajouter un Commentaire": "Ajouter un Commentaire",
-	"Liste des Commentaires": "Liste des Commentaires"
+	"Liste des Commentaires": "Liste des Commentaires",
+	"Forum de Openxum": "Forum de Openxum",
+	"Forum sur Openxum": "Forum sur Openxum"
 }
